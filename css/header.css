@@ -95,14 +95,11 @@ padding-right: 30px;
 
 .close-menu-btn {
     display: block;
-        border: #0A224A;
-        /*quitar luego*/
-        background-color: transparent;
-        /*transparent*/
+    background-color: transparent;
 }
 
 .close-menu-btn:is(:hover, :focus) {
-    background-color: #404bbf;
+    background-color: transparent;
     border: none;
     fill: #ffffff;}
 
