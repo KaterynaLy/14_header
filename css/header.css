@@ -1,6 +1,6 @@
 
 .header {
-    padding: 26px 0;
+    padding: 26px 0 26px 0;
 }
 
 ul {
@@ -11,28 +11,26 @@ ul {
 }
 .container {
     width: 100%;
-    padding-left: 26px;
-    padding-right: 26px;
-    margin: 0 auto;
+    padding-left: 60px;
+    margin-left: 0%;
     display: flex;
-    align-items: center;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    
 }
 
 .header-logo {
     display: flex;
     align-items: center;
+    float: right;
 }
 
 .logo-minimal {
-    left: 60px;
-    position: absolute;
-
+    display: flex;
+    align-items: center;
+    float: right;
 }
 
 .nav-list {
@@ -41,7 +39,7 @@ ul {
     font-size: 18px;
     font-style: normal;
     line-height: 1.5;
-    color: var(--blue-font, #0A224A);
+    color: #0A224A;
     list-style-type: none;
     position: absolute;
     right: 60px;
@@ -67,12 +65,14 @@ list-style-type: none;
 }
 .open-menu-btn {
     display: block;
-    border: none;
-    background-color: transparent;
+    border:#0A224A; /*quitar luego*/
+    background-color:#404bbf; /*transparent*/
     margin-left: auto;
 }
 
-.button-hamburger {}
+.button-hamburger {
+    stroke: #0A224A;
+}
 
 .mob-menu {
     padding-top: 150px;
@@ -131,9 +131,6 @@ list-style-type: none;
 
 .mob-nav-link {}
 
-
-
-
 .nav-link {
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -142,20 +139,56 @@ list-style-type: none;
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #747bff;
+    color:#F7FAFF;
+}
+.modal {
+    width: 375px;
+    height: 812px;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    max-width: 375px;
+    max-height: 812px;
+    overflow: scroll;
+    position: absolute;
 }
 
 /*Mobile landing*/
-@media screen and (min-width: 428px) {
+
+@media screen and (min-width: 375px) {
     .container {
         max-width: 428px;
     }
-    display: flex;
-    width: 375px;
-    padding-bottom: 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 114px;
+    .nav-list, .nav-item, .nav-link {
+        display: none;
+    }
 }
 
 /*Tablet landing*/
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .nav-list,
+    .nav-item,
+    .nav-link {
+        display: none;
+   }
+}
+
+@media screen and (min-width: 1158px) {
+
+    .container {
+        max-width: 1158px;
+    }
+    .nav-list,
+    .nav-item,
+    .nav-link {
+        display: none;
+
+    .open-menu-btn,
+    .button-hamburger,
+    .mob-menu {
+        display: none;
+    }
+    }
+    
