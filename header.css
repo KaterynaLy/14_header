@@ -65,7 +65,12 @@ list-style-type: none;
     opacity: 0;
     pointer-events: none;
 }
-.open-menu-btn {}
+.open-menu-btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+}
 
 .button-hamburger {}
 
