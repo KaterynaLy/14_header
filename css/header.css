@@ -65,8 +65,8 @@ list-style-type: none;
     pointer-events: none;
 }
 .open-menu-btn {
-    border:#0A224A; /*quitar luego*/
-    background-color:#404bbf; /*transparent*/
+    /*border:#0A224A;*/
+    background-color: transparent;
     margin-left: auto;
     position: relative;
     padding-right: 30px;
