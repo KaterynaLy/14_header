@@ -64,17 +64,22 @@ list-style-type: none;
     opacity: 0;
     pointer-events: none;
 }
+
 .open-menu-btn {
-    /*border:#0A224A;*/
+   
     background-color: transparent;
     margin-left: auto;
     position: relative;
     padding-right: 30px;
+    margin-left: auto;
+    border: none;
 }
 
 .close-menu-icon{
 position: relative;
-padding-right: 30px;
+margin-left: auto;
+padding: 40px;
+
 }
 
 .button-hamburger {
@@ -96,6 +101,7 @@ padding-right: 30px;
 .close-menu-btn {
     display: block;
     background-color: transparent;
+    border: none;
 }
 
 .close-menu-btn:is(:hover, :focus) {
@@ -134,8 +140,8 @@ padding-right: 30px;
     height: 812px;
     background-color: #fcfcfc;
     border-radius: 4px;
-    max-width: 375px;
-    max-height: 812px;
+    /*max-width: 375px;
+    max-height: 812px;*/
     overflow: scroll;
     position: absolute;
 }
@@ -153,7 +159,10 @@ padding-right: 30px;
     .header {
         padding: 32px 28px 32px 27px;
     }
-}
+        .modal {
+            width: 375px;
+            height: 812px;
+}}
 
 /*Tablet landing*/
 @media screen and (min-width: 768px) {
@@ -168,6 +177,10 @@ padding-right: 30px;
         .header {
             padding: 32px 28px 32px 27px;
         }
+                .modal {
+                    width: 768px;
+                    height: 1024px;
+}
 }
 
 @media screen and (min-width: 1440px) {
